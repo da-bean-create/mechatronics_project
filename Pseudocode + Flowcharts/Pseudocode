@@ -1,0 +1,39 @@
+BEGIN
+     INPUT mode
+     IF mode = baby
+        baby_mode
+     ELSE IF mode = parents
+        parents_mode
+     ELSE
+        casual_mode
+         
+
+BEGIN baby_mode
+     WHILE true
+         READ volume
+         IF volume > 60dB
+             OUTPUT red_LED.value(1)
+             OUTPUT buzzer.on
+         END IF
+     END WHILE
+END baby_mode
+
+BEGIN parents_mode
+     WHILE true
+         READ volume
+         IF volume > 70dB
+             OUTPUT red_LED.value(1)
+             OUTPUT buzzer.on
+         END IF
+     END WHILE
+END parents_mode
+
+BEGIN casual_mode
+     WHILE true
+         READ volume
+         IF volume > 80dB
+             OUTPUT red_LED.value(1)
+             OUTPUT buzzer.on
+         END IF
+     END WHILE
+END casual_mode
