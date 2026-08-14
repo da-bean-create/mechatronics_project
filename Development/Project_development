@@ -29,6 +29,8 @@ import math
 # Initialize ADC on GP26 (ADC 0)
 adc = machine.ADC(26)
 LED = Pin (18, Pin.OUT)
+LED2 = Pin (19, Pin.OUT)
+LED3 = Pin (20, Pin.OUT)
 # Calibration values (Adjust these based on your room noise)
 # Cheap microphone modules lack factory calibration, so we establish a baseline.
 DB_BASELINE = 40.0   # Decibel estimation for a dead-silent room
@@ -69,9 +71,25 @@ while True:
     # 3. Logarithmic formula: dB = Baseline_dB + 20 * log10(Current_Amplitude / Baseline_Amplitude)
     # Sound pressure scales logarithmically relative to your reference point.
     decibels = DB_BASELINE + (20 * math.log10(amplitude / ADC_BASELINE))
-    if decibels >= 75:
+    if decibels >= 75 and decibels <= 80:
         LED.value(1)
+        LED2.value(0)
+        LED3.value(0)
+        
+    elif decibels >= 80 and decibels <= 85:
+        LED.value(0)
+        LED2.value(1)
+        LED3.value(0)
+        
+    elif decibels >= 85:
+        LED.value(0)
+        LED2.value(0)
+        LED3.value(1)
+
+        
     else:
         LED.value(0)
+        LED2.value(0)
+        LED3.value(0)
     # Print the values to the Thonny Shell / Plotter
     print(f"Raw Amplitude: {amplitude} | Estimated dB: {decibels:.1f}")
