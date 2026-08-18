@@ -93,3 +93,27 @@ while True:
         LED3.value(0)
     # Print the values to the Thonny Shell / Plotter
     print(f"Raw Amplitude: {amplitude} | Estimated dB: {decibels:.1f}")
+
+
+
+
+
+
+
+
+
+import machine
+import neopixel
+
+num_LEDs = 5
+Pin = machine.Pin(22, machine.Pin.OUT)
+
+
+strip = neopixel.NeoPixel(Pin, num_LEDs)
+
+strip[0] = (255,0,0)
+strip[1] = (0,255,0)
+strip[2] = (0,0,255)
+
+strip.write()
+#This is how you access the different RGB LEDs on the strip
