@@ -1,0 +1,14 @@
+<h2>FUNCTIONAL EVALUATION:</h2>
+In the end, our project lacked some additional planned features such as an ultrasonic distance sensor, laser guiding and a super-exact decibel measure. However, our major component was completed and our mode system was functional, allowing our machine to complete its original task successfully. For instance, when our project is turned to its chosen mode and decibel alert (75dB, 80dB and 85dB) it will turn on the buzzer and turn on the LED strip.
+
+<h2>NON-FUNCTIONAL EVALUATION:</h2>
+Our button mode function I believe also counts as a non-functional component due to the effort we put into ensuring it was clean, easy-to-read, noticeable and provided enough information to give the user a good estimate of how loud they were. The Raspberry Pi PICO workspace (breadboard, components, wiring etc) was kept relatively clean as well so it's easy to navigate if hardware change is needed. Overall, our non-functional requirements were pretty much met but maybe could've used a more cosmetic eye.
+
+<h2>ORIGINAL NEED EVALUATION:</h2>
+Our original need (a device that can detect if you're being too loud) was met with complete code varying accuracy. Since decibels cannot be read diectly from the sound detector and it is more used for detecting short, sharp noises, we had to find and equation and calibrate the base noise levels in order for it to work. This can sometimes cause slightly off results but provides a good enough estimate for its purpose to be served. 
+
+<h2>FUTURE IMPROVEMENTS</h2>
+There are multiple ways a future prototype could be improved to increase accuracy, ability and reliability. Including the planned ultrasonic sensor would allow for a much wider variety of uses and perhaps adding a second sound sensor and finding the average decebels would create a uch more accurate reading of noise. Overall, the project still has much room for advancement and improvement if necessary.
+
+<h2>Project Management:</h2>
+<p>I feel project management was handles pretty well, though we underestimated how long some aspects would take. Factors such as code testing, practical assessment and ensuring all hardware equipment was working as it should all took a little longer than anticipated, but still allowed for enough time to complete and have a few days to work on the documentation. For example, while testing the sound detector, it took us multiple lessons and help from an anonymous peer to realise that we had to calibrate the detector via a screw on the top until it was sensitive to the level of noise and vibration we wanted. Overall, this had little effect on our ability to complete the various other tasks required throughout the assignment.</p>
