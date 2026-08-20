@@ -12,3 +12,11 @@ There are multiple ways a future prototype could be improved to increase accurac
 
 <h2>Project Management:</h2>
 <p>I feel project management was handles pretty well, though we underestimated how long some aspects would take. Factors such as code testing, practical assessment and ensuring all hardware equipment was working as it should all took a little longer than anticipated, but still allowed for enough time to complete and have a few days to work on the documentation. For example, while testing the sound detector, it took us multiple lessons and help from an anonymous peer to realise that we had to calibrate the detector via a screw on the top until it was sensitive to the level of noise and vibration we wanted. Overall, this had little effect on our ability to complete the various other tasks required throughout the assignment.</p>
+
+<h2>PEER EVALUATION</h2>
+From: Michael Kuchin<br>
+Positive: <br>I like how the modes in the code are lined up to represent different volume sensing rates.The mode selection system is well made, with a logical method for selections.<br>
+Negative:<br>Modes are not explained well enough  Buzzer can of obviously trigger the original microphone detector over and over again.<br>
+Implication:<br>The unique modes, and intuitive mode selection on this system, makes it have a wide use case in detecting noise at different volumes.The modes could be explained a little better, and the buzzer and microphone loop could cause issues.<br>
+<h3>RESPONSE</h3>
+Based off this review, I feel we did a pretty good job at our project. The buzzer microphone loop was actually fixed by a short delay I added but it may not have been visible in the video. Modes could be explained better so that is something to work on and I am satisfied with the positive mentions. Overall, this review has a good mix of praise and constructive feedback, shedding light on what we've done right and what we can improve on next time.
